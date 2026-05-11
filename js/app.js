@@ -240,6 +240,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else {
                     serviceError.classList.add('hidden');
                 }
+
+                // Validate Account Type
+                const accountTypes = document.querySelectorAll('input[name="account_type"]:checked');
+                // We can reuse the service error or add a generic error, but let's just make sure one is checked.
+                const accountTypeRadios = document.querySelectorAll('input[name="account_type"]');
+                if (accountTypeRadios.length > 0) {
+                    let accountError = document.getElementById('account-error');
+                    if (!accountError) {
+                        // Create error dynamically if not present
+                        accountError = document.createElement('p');
+                        accountError.id = 'account-error';
+                        accountError.className = 'text-red-500 text-xs mt-1';
+                        accountError.innerText = 'Please select an account type.';
+                        accountTypeRadios[0].closest('div').parentElement.appendChild(accountError);
+                    }
+                    if (accountTypes.length === 0) {
+                        accountError.classList.remove('hidden');
+                        isValid = false;
+                    } else {
+                        accountError.classList.add('hidden');
+                    }
+                }
             }
 
             // Validate Date (only if it exists)
