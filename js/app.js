@@ -135,4 +135,104 @@ document.addEventListener('DOMContentLoaded', () => {
             closeLightbox();
         }
     });
+
+    // Form Validation Logic
+    const bookingForm = document.getElementById('booking-form');
+    if (bookingForm) {
+        
+        // Set minimum date to today
+        const dateInput = document.getElementById('date');
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.setAttribute('min', today);
+
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            let isValid = true;
+            
+            // Validate Name
+            const name = document.getElementById('name');
+            const nameError = document.getElementById('name-error');
+            if (!name.value.trim()) {
+                nameError.classList.remove('hidden');
+                name.classList.add('border-red-500');
+                isValid = false;
+            } else {
+                nameError.classList.add('hidden');
+                name.classList.remove('border-red-500');
+            }
+
+            // Validate Email
+            const email = document.getElementById('email');
+            const emailError = document.getElementById('email-error');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email.value)) {
+                emailError.classList.remove('hidden');
+                email.classList.add('border-red-500');
+                isValid = false;
+            } else {
+                emailError.classList.add('hidden');
+                email.classList.remove('border-red-500');
+            }
+
+            // Validate Phone
+            const phone = document.getElementById('phone');
+            const phoneError = document.getElementById('phone-error');
+            if (!phone.value.trim()) {
+                phoneError.classList.remove('hidden');
+                phone.classList.add('border-red-500');
+                isValid = false;
+            } else {
+                phoneError.classList.add('hidden');
+                phone.classList.remove('border-red-500');
+            }
+
+            // Validate Service
+            const service = document.getElementById('service');
+            const serviceError = document.getElementById('service-error');
+            if (!service.value) {
+                serviceError.classList.remove('hidden');
+                service.classList.add('border-red-500');
+                isValid = false;
+            } else {
+                serviceError.classList.add('hidden');
+                service.classList.remove('border-red-500');
+            }
+
+            // Validate Date
+            const dateError = document.getElementById('date-error');
+            if (!dateInput.value || dateInput.value < today) {
+                dateError.classList.remove('hidden');
+                dateInput.classList.add('border-red-500');
+                isValid = false;
+            } else {
+                dateError.classList.add('hidden');
+                dateInput.classList.remove('border-red-500');
+            }
+
+            // Validate Time
+            const time = document.getElementById('time');
+            const timeError = document.getElementById('time-error');
+            if (!time.value) {
+                timeError.classList.remove('hidden');
+                time.classList.add('border-red-500');
+                isValid = false;
+            } else {
+                timeError.classList.add('hidden');
+                time.classList.remove('border-red-500');
+            }
+
+            // Success state
+            if (isValid) {
+                const successMsg = document.getElementById('form-success');
+                successMsg.classList.remove('hidden');
+                
+                // Reset form after showing success
+                setTimeout(() => {
+                    bookingForm.reset();
+                    successMsg.classList.add('hidden');
+                }, 4000);
+            }
+        });
+    }
 });
