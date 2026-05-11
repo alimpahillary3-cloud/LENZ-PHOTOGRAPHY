@@ -93,70 +93,72 @@
                 <!-- Filter Buttons -->
                 <div class="flex justify-center flex-wrap gap-4 mb-12">
                     <button class="filter-btn active px-6 py-2 rounded-full border border-brand-800 bg-brand-800 text-white transition-colors" data-filter="all">All</button>
-                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-gray-600 hover:bg-brand-800 hover:text-white hover:border-brand-800 transition-colors" data-filter="arthur">Arthur K.</button>
-                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-gray-600 hover:bg-brand-800 hover:text-white hover:border-brand-800 transition-colors" data-filter="sarah">Sarah M.</button>
-                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-gray-600 hover:bg-brand-800 hover:text-white hover:border-brand-800 transition-colors" data-filter="david">David L.</button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-gray-600 hover:bg-brand-800 hover:text-white hover:border-brand-800 transition-colors" data-filter="portrait">Portraits</button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-gray-600 hover:bg-brand-800 hover:text-white hover:border-brand-800 transition-colors" data-filter="event">Events & Weddings</button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-gray-600 hover:bg-brand-800 hover:text-white hover:border-brand-800 transition-colors" data-filter="nature">Nature</button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-gray-600 hover:bg-brand-800 hover:text-white hover:border-brand-800 transition-colors" data-filter="commercial">Commercial</button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-gray-600 hover:bg-brand-800 hover:text-white hover:border-brand-800 transition-colors" data-filter="fineart">Fine Art</button>
                 </div>
 
                 <!-- CSS Grid Gallery -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery-grid">
                     <!-- Item 1 -->
-                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="arthur">
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait">
                         <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-medium">Image Placeholder</div>
                         <img src="" alt="Golden Hour Portrait" class="relative z-10 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <figcaption class="absolute inset-0 z-20 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
                             <h3 class="text-2xl font-serif text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Golden Hour Portrait</h3>
-                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By Arthur K.</p>
+                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By Arthur K. • Portraits</p>
                             <button class="px-6 py-2 bg-white text-brand-900 font-medium rounded-md hover:bg-gray-100 transition-colors translate-y-4 group-hover:translate-y-0 duration-300 delay-150">View Details</button>
                         </figcaption>
                     </figure>
                     <!-- Item 2 -->
-                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-gray-200 cursor-pointer" data-category="sarah">
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-gray-200 cursor-pointer" data-category="event">
                         <div class="absolute inset-0 flex items-center justify-center text-gray-500 font-medium">Image Placeholder</div>
                         <img src="" alt="Corporate Summit" class="relative z-10 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <figcaption class="absolute inset-0 z-20 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
                             <h3 class="text-2xl font-serif text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Corporate Summit 2026</h3>
-                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By Sarah M.</p>
+                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By Sarah M. • Events</p>
                             <button class="px-6 py-2 bg-white text-brand-900 font-medium rounded-md hover:bg-gray-100 transition-colors translate-y-4 group-hover:translate-y-0 duration-300 delay-150">View Details</button>
                         </figcaption>
                     </figure>
                     <!-- Item 3 -->
-                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-stone-200 cursor-pointer" data-category="david">
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-stone-200 cursor-pointer" data-category="nature">
                         <div class="absolute inset-0 flex items-center justify-center text-gray-500 font-medium">Image Placeholder</div>
                         <img src="" alt="Rwenzori Peaks" class="relative z-10 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <figcaption class="absolute inset-0 z-20 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
                             <h3 class="text-2xl font-serif text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Rwenzori Peaks</h3>
-                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By David L.</p>
+                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By David L. • Nature</p>
                             <button class="px-6 py-2 bg-white text-brand-900 font-medium rounded-md hover:bg-gray-100 transition-colors translate-y-4 group-hover:translate-y-0 duration-300 delay-150">View Details</button>
                         </figcaption>
                     </figure>
                     <!-- Item 4 -->
-                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-slate-200 cursor-pointer" data-category="sarah">
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-slate-200 cursor-pointer" data-category="fineart">
                         <div class="absolute inset-0 flex items-center justify-center text-gray-500 font-medium">Image Placeholder</div>
-                        <img src="" alt="Wedding Bliss" class="relative z-10 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="" alt="Monochrome Series" class="relative z-10 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <figcaption class="absolute inset-0 z-20 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
-                            <h3 class="text-2xl font-serif text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Wedding Bliss</h3>
-                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By Sarah M.</p>
+                            <h3 class="text-2xl font-serif text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Monochrome Series</h3>
+                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By Sarah M. • Fine Art</p>
                             <button class="px-6 py-2 bg-white text-brand-900 font-medium rounded-md hover:bg-gray-100 transition-colors translate-y-4 group-hover:translate-y-0 duration-300 delay-150">View Details</button>
                         </figcaption>
                     </figure>
                     <!-- Item 5 -->
-                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-zinc-200 cursor-pointer" data-category="arthur">
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-zinc-200 cursor-pointer" data-category="commercial">
                         <div class="absolute inset-0 flex items-center justify-center text-gray-500 font-medium">Image Placeholder</div>
-                        <img src="" alt="Studio Headshot" class="relative z-10 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="" alt="Product Campaign" class="relative z-10 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <figcaption class="absolute inset-0 z-20 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
-                            <h3 class="text-2xl font-serif text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Studio Headshot</h3>
-                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By Arthur K.</p>
+                            <h3 class="text-2xl font-serif text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Product Campaign</h3>
+                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By Arthur K. • Commercial</p>
                             <button class="px-6 py-2 bg-white text-brand-900 font-medium rounded-md hover:bg-gray-100 transition-colors translate-y-4 group-hover:translate-y-0 duration-300 delay-150">View Details</button>
                         </figcaption>
                     </figure>
                     <!-- Item 6 -->
-                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-neutral-200 cursor-pointer" data-category="david">
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-neutral-200 cursor-pointer" data-category="nature">
                         <div class="absolute inset-0 flex items-center justify-center text-gray-500 font-medium">Image Placeholder</div>
                         <img src="" alt="Murchison Falls Safari" class="relative z-10 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <figcaption class="absolute inset-0 z-20 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
                             <h3 class="text-2xl font-serif text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Murchison Falls Safari</h3>
-                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By David L.</p>
+                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By David L. • Nature</p>
                             <button class="px-6 py-2 bg-white text-brand-900 font-medium rounded-md hover:bg-gray-100 transition-colors translate-y-4 group-hover:translate-y-0 duration-300 delay-150">View Details</button>
                         </figcaption>
                     </figure>
