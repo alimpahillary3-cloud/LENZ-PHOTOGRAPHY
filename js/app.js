@@ -205,6 +205,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 phone.classList.remove('border-red-500');
             }
 
+            // Validate Photographer (only if it exists)
+            const photographer = document.getElementById('photographer');
+            const photographerError = document.getElementById('photographer-error');
+            if (photographer && photographerError) {
+                if (!photographer.value) {
+                    photographerError.classList.remove('hidden');
+                    photographer.classList.add('border-red-500');
+                    isValid = false;
+                } else {
+                    photographerError.classList.add('hidden');
+                    photographer.classList.remove('border-red-500');
+                }
+            }
+
             // Validate Service (booking form) or Specialty (signup form)
             const service = document.getElementById('service');
             const serviceError = document.getElementById('service-error');
