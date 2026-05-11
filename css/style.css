@@ -27,3 +27,7 @@ html {
         opacity: 1;
     }
 }
+
+img[src=""] {
+    opacity: 0;
+}
