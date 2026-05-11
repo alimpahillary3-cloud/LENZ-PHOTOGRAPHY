@@ -113,7 +113,80 @@
                 </a>
             </div>
         </section>
+
+        <!-- Portfolio/Gallery Section -->
+        <section id="portfolio" class="py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold mb-4">Our <span class="text-brand-accent italic">Portfolio</span></h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Explore our curated collection of stunning portraits and unforgettable events.</p>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="flex justify-center flex-wrap gap-4 mb-12">
+                    <button class="filter-btn active px-6 py-2 rounded-full border border-brand-800 bg-brand-800 text-white hover:bg-brand-900 transition-colors" data-filter="all">All Works</button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-gray-600 hover:border-brand-800 hover:text-brand-800 transition-colors" data-filter="portrait">Portraits</button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-gray-600 hover:border-brand-800 hover:text-brand-800 transition-colors" data-filter="event">Events</button>
+                </div>
+
+                <!-- CSS Grid Gallery -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="gallery-grid">
+                    <!-- Portrait 1 -->
+                    <div class="gallery-item group relative overflow-hidden rounded-lg aspect-[4/5] cursor-pointer" data-category="portrait">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop" alt="Portrait 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-brand-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <i class="fa-solid fa-expand text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <!-- Event 1 -->
+                    <div class="gallery-item group relative overflow-hidden rounded-lg aspect-[4/5] cursor-pointer" data-category="event">
+                        <img src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?q=80&w=600&auto=format&fit=crop" alt="Event 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-brand-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <i class="fa-solid fa-expand text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <!-- Portrait 2 -->
+                    <div class="gallery-item group relative overflow-hidden rounded-lg aspect-[4/5] cursor-pointer" data-category="portrait">
+                        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=600&auto=format&fit=crop" alt="Portrait 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-brand-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <i class="fa-solid fa-expand text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <!-- Event 2 -->
+                    <div class="gallery-item group relative overflow-hidden rounded-lg aspect-[4/5] cursor-pointer" data-category="event">
+                        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=600&auto=format&fit=crop" alt="Event 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-brand-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <i class="fa-solid fa-expand text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <!-- Portrait 3 -->
+                    <div class="gallery-item group relative overflow-hidden rounded-lg aspect-[4/5] cursor-pointer" data-category="portrait">
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=600&auto=format&fit=crop" alt="Portrait 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-brand-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <i class="fa-solid fa-expand text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <!-- Event 3 -->
+                    <div class="gallery-item group relative overflow-hidden rounded-lg aspect-[4/5] cursor-pointer" data-category="event">
+                        <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e325?q=80&w=600&auto=format&fit=crop" alt="Event 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-brand-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <i class="fa-solid fa-expand text-white text-3xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-[60] bg-brand-900/95 backdrop-blur-sm hidden flex items-center justify-center opacity-0 transition-opacity duration-300">
+        <button id="lightbox-close" class="absolute top-6 right-6 text-white hover:text-brand-accent transition-colors text-3xl" aria-label="Close lightbox">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="w-full max-w-5xl px-4 flex items-center justify-center relative">
+            <img id="lightbox-img" src="" alt="Full size" class="max-h-[85vh] object-contain rounded-lg shadow-2xl scale-95 transition-transform duration-300">
+        </div>
+    </div>
 
     <!-- Custom JS -->
     <script src="js/app.js"></script>
