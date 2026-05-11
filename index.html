@@ -78,7 +78,41 @@
 
     <!-- Main Content -->
     <main>
-        <!-- Content will go here in Phase 2, 3, 4 -->
+        <!-- Hero Section -->
+        <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+            <!-- Background Image -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1531123897727-8f129e1bf98c?q=80&w=2070&auto=format&fit=crop" alt="Hero Background" class="w-full h-full object-cover object-center" />
+                <div class="absolute inset-0 bg-brand-900/60 mix-blend-multiply"></div>
+                <!-- Gradient Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-900 via-transparent to-transparent"></div>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="container mx-auto px-4 relative z-10 text-center text-white mt-16">
+                <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 drop-shadow-lg opacity-0 translate-y-8 animate-[fadeUp_1s_ease-out_forwards]">
+                    Capturing Life's <br/> <span class="text-brand-accent italic">Finest Moments</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light drop-shadow opacity-0 translate-y-8 animate-[fadeUp_1s_ease-out_0.3s_forwards]">
+                    Premium portrait and event photography based in Uganda. We turn your fleeting moments into timeless art.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 translate-y-8 animate-[fadeUp_1s_ease-out_0.6s_forwards]">
+                    <a href="#portfolio" class="px-8 py-4 bg-transparent border border-white text-white font-medium rounded-sm hover:bg-white hover:text-brand-900 transition-all duration-300 w-full sm:w-auto">
+                        View Portfolio
+                    </a>
+                    <a href="#booking" class="px-8 py-4 bg-brand-accent text-white font-medium rounded-sm hover:bg-yellow-600 transition-all duration-300 w-full sm:w-auto shadow-lg shadow-brand-accent/30">
+                        Book a Session
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-bounce opacity-0 animate-[fadeIn_1s_ease-out_1.5s_forwards]">
+                <a href="#portfolio" class="text-white/70 hover:text-brand-accent transition-colors" aria-label="Scroll down">
+                    <i class="fa-solid fa-chevron-down text-2xl"></i>
+                </a>
+            </div>
+        </section>
     </main>
 
     <!-- Custom JS -->

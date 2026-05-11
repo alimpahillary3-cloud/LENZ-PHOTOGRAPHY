@@ -13,3 +13,17 @@ html {
 }
 
 /* Lightbox specific styles will go here */
+
+/* Animations */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
