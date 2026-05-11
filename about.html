@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenz Photography | Professional Portfolio & Booking</title>
+    <meta name="description" content="Professional photography portfolio and booking system for local photographers in Uganda. Specialized in portraits and events.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            800: '#065f46',
+                            900: '#064e3b',
+                            accent: '#eab308', /* Yellow accent */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-brand-50 text-brand-800 antialiased selection:bg-brand-accent selection:text-white">
+
+    <!-- Header Navigation -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300" id="main-header">
+        <div class="absolute inset-0 bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm" id="header-bg"></div>
+        <div class="container mx-auto px-4 relative">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="text-2xl font-serif font-bold tracking-tight z-10 flex items-center gap-2">
+                    <i class="fa-solid fa-camera-retro text-brand-accent"></i>
+                    <span>Lenz<span class="text-brand-accent">.</span></span>
+                </a>
+                
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 z-10">
+                    <a href="index.html" class="text-sm font-medium hover:text-brand-accent transition-colors">Home</a>
+                    <a href="gallery.html" class="text-sm font-medium hover:text-brand-accent transition-colors">Gallery</a>
+                    <a href="about.html" class="text-sm font-medium hover:text-brand-accent transition-colors">About</a>
+                    <a href="booking.html" class="text-sm font-medium hover:text-brand-accent transition-colors">Contact / Booking</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden z-10 text-brand-800 p-2" id="mobile-menu-btn" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Nav Menu -->
+        <div class="md:hidden absolute top-full left-0 w-full bg-white shadow-lg hidden flex-col transition-all duration-300 transform origin-top" id="mobile-nav">
+            <a href="index.html" class="p-4 border-b border-gray-100 text-center hover:bg-gray-50 hover:text-brand-accent transition-colors mobile-link">Home</a>
+            <a href="gallery.html" class="p-4 border-b border-gray-100 text-center hover:bg-gray-50 hover:text-brand-accent transition-colors mobile-link">Gallery</a>
+            <a href="about.html" class="p-4 border-b border-gray-100 text-center hover:bg-gray-50 hover:text-brand-accent transition-colors mobile-link">About</a>
+            <a href="booking.html" class="p-4 text-center hover:bg-gray-50 hover:text-brand-accent transition-colors mobile-link">Contact / Booking</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+
+        <!-- About Section -->
+        <section id="about" class="py-40 bg-white min-h-screen flex items-center">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+                    <!-- Image -->
+                    <div class="md:w-1/2 relative">
+                        <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative z-10 bg-gray-100">
+                            <img src="" alt="About the Community" class="w-full h-full object-cover">
+                        </div>
+                        <!-- Decorative element -->
+                        <div class="absolute -bottom-6 -left-6 w-2/3 h-2/3 border-4 border-brand-accent rounded-xl z-0 hidden md:block"></div>
+                    </div>
+                    <!-- Text -->
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl md:text-5xl font-serif font-bold mb-6">About the <span class="text-brand-accent italic">Platform</span></h2>
+                        <h3 class="text-xl font-medium text-gray-800 mb-4">Uniting creative visionaries across Uganda.</h3>
+                        <p class="text-gray-600 mb-6 font-light leading-relaxed">
+                            Our platform brings together the finest photographers specializing in diverse visual storytelling. We aim to connect clients with the perfect lens for their unique narrative, whether it's an intimate wedding, a large corporate event, or a personal portrait session.
+                        </p>
+                        <p class="text-gray-600 mb-8 font-light leading-relaxed">
+                            By joining forces, our community of photographers guarantees flawlessly executed visuals and unparalleled professionalism. Every photographer in our directory is vetted for their expertise, ensuring you get only the best.
+                        </p>
+                        <a href="gallery.html" class="inline-flex items-center gap-2 text-brand-800 font-medium hover:text-brand-accent transition-colors">
+                            Explore the Community Gallery <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-900 text-white py-12 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <a href="#" class="text-2xl font-serif font-bold tracking-tight mb-6 md:mb-0 flex items-center gap-2">
+                    <i class="fa-solid fa-camera-retro text-brand-accent"></i>
+                    <span>Lenz<span class="text-brand-accent">.</span></span>
+                </a>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#" class="text-gray-400 hover:text-brand-accent transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-brand-accent transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-brand-accent transition-colors"><i class="fa-brands fa-twitter text-xl"></i></a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>&copy; 2026 Lenz Photography. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Designed for BIT122 - Cavendish University</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-[60] bg-brand-900/95 backdrop-blur-sm hidden flex items-center justify-center opacity-0 transition-opacity duration-300">
+        <button id="lightbox-close" class="absolute top-6 right-6 text-white hover:text-brand-accent transition-colors text-3xl" aria-label="Close lightbox">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="w-full max-w-5xl px-4 flex items-center justify-center relative">
+            <img id="lightbox-img" src="" alt="Full size" class="max-h-[85vh] object-contain rounded-lg shadow-2xl scale-95 transition-transform duration-300">
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+</body>
+</html>
