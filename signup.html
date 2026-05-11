@@ -135,10 +135,21 @@
                             </div>
                             
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
-                                    <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-accent focus:border-brand-accent outline-none transition-colors">
-                                    <p class="text-red-500 text-xs mt-1 hidden" id="phone-error">Please enter your phone number.</p>
+                                <div class="space-y-6">
+                                    <div>
+                                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
+                                        <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-accent focus:border-brand-accent outline-none transition-colors">
+                                        <p class="text-red-500 text-xs mt-1 hidden" id="phone-error">Please enter your phone number.</p>
+                                    </div>
+                                    <div>
+                                        <label for="portfolio" class="block text-sm font-medium text-gray-700 mb-1">Portfolio Link / Instagram *</label>
+                                        <input type="url" id="portfolio" name="portfolio" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-accent focus:border-brand-accent outline-none transition-colors" placeholder="https://">
+                                        <p class="text-red-500 text-xs mt-1 hidden" id="portfolio-error">Please enter a valid link.</p>
+                                    </div>
+                                    <div>
+                                        <label for="years" class="block text-sm font-medium text-gray-700 mb-1">Years of Experience</label>
+                                        <input type="number" id="years" name="years" min="0" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-accent focus:border-brand-accent outline-none transition-colors">
+                                    </div>
                                 </div>
                                 <div>
                                     <label class="block text-sm font-medium text-gray-700 mb-2">Photography Specialty * (Select all that apply)</label>
@@ -161,18 +172,6 @@
                                     </div>
                                     <input type="text" id="specialty-other-text" name="specialty_other" placeholder="Please specify" class="mt-2 w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-accent focus:border-brand-accent outline-none transition-colors hidden">
                                     <p class="text-red-500 text-xs mt-1 hidden" id="service-error">Please select at least one specialty.</p>
-                                </div>
-                            </div>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label for="portfolio" class="block text-sm font-medium text-gray-700 mb-1">Portfolio Link / Instagram *</label>
-                                    <input type="url" id="portfolio" name="portfolio" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-accent focus:border-brand-accent outline-none transition-colors" placeholder="https://">
-                                    <p class="text-red-500 text-xs mt-1 hidden" id="portfolio-error">Please enter a valid link.</p>
-                                </div>
-                                <div>
-                                    <label for="years" class="block text-sm font-medium text-gray-700 mb-1">Years of Experience</label>
-                                    <input type="number" id="years" name="years" min="0" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-accent focus:border-brand-accent outline-none transition-colors">
                                 </div>
                             </div>
 
