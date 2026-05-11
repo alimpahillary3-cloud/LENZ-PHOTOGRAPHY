@@ -140,10 +140,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const bookingForm = document.getElementById('booking-form');
     if (bookingForm) {
         
-        // Set minimum date to today
+        // Set minimum date to today (if date input exists)
         const dateInput = document.getElementById('date');
         const today = new Date().toISOString().split('T')[0];
-        dateInput.setAttribute('min', today);
+        if (dateInput) {
+            dateInput.setAttribute('min', today);
+        }
+
+        // Setup "Other" specialty toggle for signup form
+        const specialtyOtherCheckbox = document.getElementById('specialty-other');
+        const specialtyOtherText = document.getElementById('specialty-other-text');
+        if (specialtyOtherCheckbox && specialtyOtherText) {
+            specialtyOtherCheckbox.addEventListener('change', (e) => {
+                if (e.target.checked) {
+                    specialtyOtherText.classList.remove('hidden');
+                    specialtyOtherText.required = true;
+                } else {
+                    specialtyOtherText.classList.add('hidden');
+                    specialtyOtherText.required = false;
+                    specialtyOtherText.value = '';
+                }
+            });
+        }
 
         bookingForm.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -187,39 +205,54 @@ document.addEventListener('DOMContentLoaded', () => {
                 phone.classList.remove('border-red-500');
             }
 
-            // Validate Service
+            // Validate Service (booking form) or Specialty (signup form)
             const service = document.getElementById('service');
             const serviceError = document.getElementById('service-error');
-            if (!service.value) {
-                serviceError.classList.remove('hidden');
-                service.classList.add('border-red-500');
-                isValid = false;
+            if (service) {
+                if (!service.value) {
+                    serviceError.classList.remove('hidden');
+                    service.classList.add('border-red-500');
+                    isValid = false;
+                } else {
+                    serviceError.classList.add('hidden');
+                    service.classList.remove('border-red-500');
+                }
             } else {
-                serviceError.classList.add('hidden');
-                service.classList.remove('border-red-500');
+                // We are on signup form with checkboxes
+                const specialties = document.querySelectorAll('input[name="specialty"]:checked');
+                if (specialties.length === 0) {
+                    serviceError.classList.remove('hidden');
+                    isValid = false;
+                } else {
+                    serviceError.classList.add('hidden');
+                }
             }
 
-            // Validate Date
+            // Validate Date (only if it exists)
             const dateError = document.getElementById('date-error');
-            if (!dateInput.value || dateInput.value < today) {
-                dateError.classList.remove('hidden');
-                dateInput.classList.add('border-red-500');
-                isValid = false;
-            } else {
-                dateError.classList.add('hidden');
-                dateInput.classList.remove('border-red-500');
+            if (dateInput && dateError) {
+                if (!dateInput.value || dateInput.value < today) {
+                    dateError.classList.remove('hidden');
+                    dateInput.classList.add('border-red-500');
+                    isValid = false;
+                } else {
+                    dateError.classList.add('hidden');
+                    dateInput.classList.remove('border-red-500');
+                }
             }
 
-            // Validate Time
+            // Validate Time (only if it exists)
             const time = document.getElementById('time');
             const timeError = document.getElementById('time-error');
-            if (!time.value) {
-                timeError.classList.remove('hidden');
-                time.classList.add('border-red-500');
-                isValid = false;
-            } else {
-                timeError.classList.add('hidden');
-                time.classList.remove('border-red-500');
+            if (time && timeError) {
+                if (!time.value) {
+                    timeError.classList.remove('hidden');
+                    time.classList.add('border-red-500');
+                    isValid = false;
+                } else {
+                    timeError.classList.add('hidden');
+                    time.classList.remove('border-red-500');
+                }
             }
 
             // Success state
