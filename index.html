@@ -57,8 +57,9 @@
                 <!-- Desktop Nav -->
                 <nav class="hidden md:flex space-x-8 z-10">
                     <a href="#home" class="text-sm font-medium hover:text-brand-accent transition-colors">Home</a>
-                    <a href="#portfolio" class="text-sm font-medium hover:text-brand-accent transition-colors">Portfolio</a>
-                    <a href="#booking" class="text-sm font-medium hover:text-brand-accent transition-colors">Book a Session</a>
+                    <a href="#portfolio" class="text-sm font-medium hover:text-brand-accent transition-colors">Gallery</a>
+                    <a href="#about" class="text-sm font-medium hover:text-brand-accent transition-colors">About</a>
+                    <a href="#booking" class="text-sm font-medium hover:text-brand-accent transition-colors">Contact / Booking</a>
                 </nav>
 
                 <!-- Mobile Menu Button -->
@@ -71,8 +72,9 @@
         <!-- Mobile Nav Menu -->
         <div class="md:hidden absolute top-full left-0 w-full bg-white shadow-lg hidden flex-col transition-all duration-300 transform origin-top" id="mobile-nav">
             <a href="#home" class="p-4 border-b border-gray-100 text-center hover:bg-gray-50 hover:text-brand-accent transition-colors mobile-link">Home</a>
-            <a href="#portfolio" class="p-4 border-b border-gray-100 text-center hover:bg-gray-50 hover:text-brand-accent transition-colors mobile-link">Portfolio</a>
-            <a href="#booking" class="p-4 text-center hover:bg-gray-50 hover:text-brand-accent transition-colors mobile-link">Book a Session</a>
+            <a href="#portfolio" class="p-4 border-b border-gray-100 text-center hover:bg-gray-50 hover:text-brand-accent transition-colors mobile-link">Gallery</a>
+            <a href="#about" class="p-4 border-b border-gray-100 text-center hover:bg-gray-50 hover:text-brand-accent transition-colors mobile-link">About</a>
+            <a href="#booking" class="p-4 text-center hover:bg-gray-50 hover:text-brand-accent transition-colors mobile-link">Contact / Booking</a>
         </div>
     </header>
 
@@ -172,6 +174,36 @@
                         <div class="absolute inset-0 bg-brand-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                             <i class="fa-solid fa-expand text-white text-3xl"></i>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-24 bg-white border-t border-gray-100">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+                    <!-- Image -->
+                    <div class="md:w-1/2 relative">
+                        <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative z-10 bg-gray-100">
+                            <img src="" alt="About the Photographer" class="w-full h-full object-cover">
+                        </div>
+                        <!-- Decorative element -->
+                        <div class="absolute -bottom-6 -left-6 w-2/3 h-2/3 border-4 border-brand-accent rounded-xl z-0 hidden md:block"></div>
+                    </div>
+                    <!-- Text -->
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl md:text-5xl font-serif font-bold mb-6">About the <span class="text-brand-accent italic">Photographer</span></h2>
+                        <h3 class="text-xl font-medium text-gray-800 mb-4">Capturing the essence of Uganda, one frame at a time.</h3>
+                        <p class="text-gray-600 mb-6 font-light leading-relaxed">
+                            With over a decade of experience in visual storytelling, Lenz Photography specializes in blending traditional aesthetics with modern visual techniques. Based in the heart of Kampala, our style is characterized by warm tones, authentic emotion, and a relentless pursuit of the perfect light.
+                        </p>
+                        <p class="text-gray-600 mb-8 font-light leading-relaxed">
+                            Whether it's a high-fashion portrait session or an intimate wedding celebration, we believe every subject has a unique narrative. My background in photojournalism ensures that no candid moment goes unnoticed, while my studio expertise guarantees flawlessly lit portraits.
+                        </p>
+                        <a href="#portfolio" class="inline-flex items-center gap-2 text-brand-800 font-medium hover:text-brand-accent transition-colors">
+                            View Gallery <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
