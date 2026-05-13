@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenz Photography | Join the Platform</title>
+    <meta name="description" content="Apply to join Uganda's premier photography platform.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            800: '#065f46',
+                            900: '#064e3b',
+                            accent: '#eab308', /* Yellow accent */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-brand-50 text-brand-800 antialiased selection:bg-brand-accent selection:text-white">
+
+    <!-- Header Navigation -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300" id="main-header">
+        <div class="absolute inset-0 bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm" id="header-bg"></div>
+        <div class="container mx-auto px-4 relative">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="text-2xl font-serif font-bold tracking-tight z-10 flex items-center gap-2">
+                    <i class="fa-solid fa-camera-retro text-brand-accent"></i>
+                    <span>Lenz<span class="text-brand-accent">.</span></span>
+                </a>
+                
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 z-10">
+                    <a href="index.html" class="text-sm font-medium hover:text-brand-accent transition-colors">Home</a>
+                    <a href="about.html" class="text-sm font-medium hover:text-brand-accent transition-colors">About</a>
+                    <a href="gallery.html" class="text-sm font-medium hover:text-brand-accent transition-colors">Gallery</a>
+                    <a href="photographers.html" class="text-sm font-medium hover:text-brand-accent transition-colors">Photographers</a>
+                    <a href="booking.html" class="text-sm font-medium hover:text-brand-accent transition-colors">Contact / Booking</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden z-10 text-brand-800 p-2" id="mobile-menu-btn" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Nav Menu -->
+        <div class="md:hidden absolute top-full left-0 w-full bg-white shadow-lg hidden flex flex-col transition-all duration-300 transform origin-top" id="mobile-nav">
+            <a href="index.html" class="p-4 border-b border-gray-100 text-center hover:bg-gray-50 hover:text-brand-accent transition-colors mobile-link">Home</a>
+            <a href="about.html" class="p-4 border-b border-gray-100 text-center hover:bg-gray-50 hover:text-brand-accent transition-colors mobile-link">About</a>
+            <a href="gallery.html" class="p-4 border-b border-gray-100 text-center hover:bg-gray-50 hover:text-brand-accent transition-colors mobile-link">Gallery</a>
+            <a href="photographers.html" class="p-4 border-b border-gray-100 text-center hover:bg-gray-50 hover:text-brand-accent transition-colors mobile-link">Photographers</a>
+            <a href="booking.html" class="p-4 text-center hover:bg-gray-50 hover:text-brand-accent transition-colors mobile-link">Contact / Booking</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+
+        <!-- Booking Section -->
+        <section id="booking" class="py-24 bg-brand-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+                    <!-- Left Sidebar -->
+                    <div class="md:w-2/5 bg-brand-900 text-white p-10 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-3xl font-serif font-bold mb-4">Join the <span class="text-brand-accent italic">Platform</span></h3>
+                            <p class="text-gray-300 mb-8 font-light">Ready to showcase your portfolio and get matched with premium clients? Fill out the form below to apply as a photographer.</p>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start gap-4">
+                                    <i class="fa-solid fa-location-dot mt-1 text-brand-accent"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Studio Location</h4>
+                                        <p class="text-sm text-gray-400">Kampala Road, Kampala, Uganda</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <i class="fa-solid fa-phone mt-1 text-brand-accent"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Phone</h4>
+                                        <p class="text-sm text-gray-400">+256 700 000 000</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <i class="fa-solid fa-envelope mt-1 text-brand-accent"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Email</h4>
+                                        <p class="text-sm text-gray-400">hello@lenzphotography.ug</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Form -->
+                    <div class="md:w-3/5 p-10">
+                        <form id="booking-form" class="space-y-6" novalidate>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
+                                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-accent focus:border-brand-accent outline-none transition-colors">
+                                    <p class="text-red-500 text-xs mt-1 hidden" id="name-error">Please enter your name.</p>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
+                                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-accent focus:border-brand-accent outline-none transition-colors">
+                                    <p class="text-red-500 text-xs mt-1 hidden" id="email-error">Please enter a valid email.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-6">
+                                    <div>
+                                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
+                                        <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-accent focus:border-brand-accent outline-none transition-colors">
+                                        <p class="text-red-500 text-xs mt-1 hidden" id="phone-error">Please enter your phone number.</p>
+                                    </div>
+                                    <div>
+                                        <label for="portfolio" class="block text-sm font-medium text-gray-700 mb-1">Portfolio Link / Instagram *</label>
+                                        <input type="url" id="portfolio" name="portfolio" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-accent focus:border-brand-accent outline-none transition-colors" placeholder="https://">
+                                        <p class="text-red-500 text-xs mt-1 hidden" id="portfolio-error">Please enter a valid link.</p>
+                                    </div>
+                                    <div>
+                                        <label for="years" class="block text-sm font-medium text-gray-700 mb-1">Years of Experience</label>
+                                        <input type="number" id="years" name="years" min="0" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-accent focus:border-brand-accent outline-none transition-colors">
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Account Type *</label>
+                                        <div class="flex flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-4">
+                                            <label class="flex items-center p-3 border border-gray-200 rounded-md cursor-pointer hover:bg-gray-50 transition-colors flex-1">
+                                                <input type="radio" name="account_type" value="solo" required class="text-brand-800 focus:ring-brand-accent mr-2">
+                                                <span class="text-sm font-medium text-gray-700">Solo Photographer</span>
+                                            </label>
+                                            <label class="flex items-center p-3 border border-gray-200 rounded-md cursor-pointer hover:bg-gray-50 transition-colors flex-1">
+                                                <input type="radio" name="account_type" value="team" class="text-brand-800 focus:ring-brand-accent mr-2">
+                                                <span class="text-sm font-medium text-gray-700">Team / Studio</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="space-y-6">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Photography Specialty * (Select all that apply)</label>
+                                        <div class="space-y-2">
+                                            <label class="flex items-center">
+                                                <input type="checkbox" name="specialty" value="portrait" class="rounded border-gray-300 text-brand-800 focus:ring-brand-accent mr-2"> Portraits
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" name="specialty" value="wedding" class="rounded border-gray-300 text-brand-800 focus:ring-brand-accent mr-2"> Weddings
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" name="specialty" value="event" class="rounded border-gray-300 text-brand-800 focus:ring-brand-accent mr-2"> Events
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" name="specialty" value="nature" class="rounded border-gray-300 text-brand-800 focus:ring-brand-accent mr-2"> Nature / Landscape
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" name="specialty" value="other" id="specialty-other" class="rounded border-gray-300 text-brand-800 focus:ring-brand-accent mr-2"> Other
+                                            </label>
+                                        </div>
+                                        <input type="text" id="specialty-other-text" name="specialty_other" placeholder="Please specify" class="mt-2 w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-accent focus:border-brand-accent outline-none transition-colors hidden">
+                                        <p class="text-red-500 text-xs mt-1 hidden" id="service-error">Please select at least one specialty.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Tell us about your style and equipment</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-accent focus:border-brand-accent outline-none transition-colors resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-brand-800 text-white font-medium py-3 rounded-md hover:bg-brand-900 transition-colors shadow-lg">
+                                Apply to Join
+                            </button>
+                            
+                            <!-- Success Message -->
+                            <div id="form-success" class="hidden mt-4 p-4 bg-green-50 text-green-700 rounded-md border border-green-200">
+                                <i class="fa-solid fa-circle-check mr-2"></i> Your application has been submitted successfully! We will review your portfolio and get back to you.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-900 text-white py-12 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <a href="#" class="text-2xl font-serif font-bold tracking-tight mb-6 md:mb-0 flex items-center gap-2">
+                    <i class="fa-solid fa-camera-retro text-brand-accent"></i>
+                    <span>Lenz<span class="text-brand-accent">.</span></span>
+                </a>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#" class="text-gray-400 hover:text-brand-accent transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-brand-accent transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-brand-accent transition-colors"><i class="fa-brands fa-twitter text-xl"></i></a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>&copy; 2026 Lenz Photography. All rights reserved.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-[60] bg-brand-900/95 backdrop-blur-sm hidden flex items-center justify-center opacity-0 transition-opacity duration-300">
+        <button id="lightbox-close" class="absolute top-6 right-6 text-white hover:text-brand-accent transition-colors text-3xl" aria-label="Close lightbox">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="w-full max-w-5xl px-4 flex items-center justify-center relative">
+            <img id="lightbox-img" src="" alt="Full size" class="max-h-[85vh] object-contain rounded-lg shadow-2xl scale-95 transition-transform duration-300">
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+</body>
+</html>
