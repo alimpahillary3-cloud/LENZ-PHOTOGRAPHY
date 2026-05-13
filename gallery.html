@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenz Photography | Professional Portfolio & Booking</title>
+    <meta name="description" content="Professional photography portfolio and booking system for local photographers in Uganda. Specialized in portraits and events.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            800: '#065f46',
+                            900: '#064e3b',
+                            accent: '#eab308', /* Yellow accent */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-brand-50 text-brand-800 antialiased selection:bg-brand-accent selection:text-white">
+
+    <!-- Header Navigation -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300" id="main-header">
+        <div class="absolute inset-0 bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm" id="header-bg"></div>
+        <div class="container mx-auto px-4 relative">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="text-2xl font-serif font-bold tracking-tight z-10 flex items-center gap-2">
+                    <i class="fa-solid fa-camera-retro text-brand-accent"></i>
+                    <span>Lenz<span class="text-brand-accent">.</span></span>
+                </a>
+                
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 z-10">
+                    <a href="index.html" class="text-sm font-medium hover:text-brand-accent transition-colors">Home</a>
+                    <a href="about.html" class="text-sm font-medium hover:text-brand-accent transition-colors">About</a>
+                    <a href="gallery.html" class="text-sm font-medium text-brand-accent transition-colors">Gallery</a>
+                    <a href="photographers.html" class="text-sm font-medium hover:text-brand-accent transition-colors">Photographers</a>
+                    <a href="booking.html" class="text-sm font-medium hover:text-brand-accent transition-colors">Contact / Booking</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden z-10 text-brand-800 p-2" id="mobile-menu-btn" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Nav Menu -->
+        <div class="md:hidden absolute top-full left-0 w-full bg-white shadow-lg hidden flex flex-col transition-all duration-300 transform origin-top" id="mobile-nav">
+            <a href="index.html" class="p-4 border-b border-gray-100 text-center hover:bg-gray-50 hover:text-brand-accent transition-colors mobile-link">Home</a>
+            <a href="about.html" class="p-4 border-b border-gray-100 text-center hover:bg-gray-50 hover:text-brand-accent transition-colors mobile-link">About</a>
+            <a href="gallery.html" class="p-4 border-b border-gray-100 text-center text-brand-accent hover:bg-gray-50 transition-colors mobile-link">Gallery</a>
+            <a href="photographers.html" class="p-4 border-b border-gray-100 text-center hover:bg-gray-50 hover:text-brand-accent transition-colors mobile-link">Photographers</a>
+            <a href="booking.html" class="p-4 text-center hover:bg-gray-50 hover:text-brand-accent transition-colors mobile-link">Contact / Booking</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+
+        <!-- Portfolio/Gallery Section -->
+        <section id="portfolio" class="py-24 bg-white mt-10">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold mb-4">Community <span class="text-brand-accent italic">Gallery</span></h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Explore a curated collection of stunning portraits and unforgettable events from our top photographers.</p>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="flex justify-center flex-wrap gap-4 mb-12">
+                    <button class="filter-btn active px-6 py-2 rounded-full border border-brand-800 bg-brand-800 text-white transition-colors" data-filter="all">All</button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-gray-600 hover:bg-brand-800 hover:text-white hover:border-brand-800 transition-colors" data-filter="portrait">Portraits</button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-gray-600 hover:bg-brand-800 hover:text-white hover:border-brand-800 transition-colors" data-filter="event">Events & Weddings</button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-gray-600 hover:bg-brand-800 hover:text-white hover:border-brand-800 transition-colors" data-filter="nature">Nature</button>
+                    
+                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-gray-600 hover:bg-brand-800 hover:text-white hover:border-brand-800 transition-colors" data-filter="fineart">Fine Art</button>
+                </div>
+
+                <!-- CSS Grid Gallery -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery-grid">
+                    <!-- Item 1 -->
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait">
+                        <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-medium">Image Placeholder</div>
+                        <img src="" alt="Golden Hour Portrait" class="relative z-10 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <figcaption class="absolute inset-0 z-20 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+                            <h3 class="text-2xl font-serif text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Golden Hour Portrait</h3>
+                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By Arthur K. • Portraits</p>
+                            <button class="px-6 py-2 bg-white text-brand-900 font-medium rounded-md hover:bg-gray-100 transition-colors translate-y-4 group-hover:translate-y-0 duration-300 delay-150">View Details</button>
+                        </figcaption>
+                    </figure>
+                    <!-- Item 2 -->
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-gray-200 cursor-pointer" data-category="event">
+                        <div class="absolute inset-0 flex items-center justify-center text-gray-500 font-medium">Image Placeholder</div>
+                        <img src="" alt="Corporate Summit" class="relative z-10 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <figcaption class="absolute inset-0 z-20 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+                            <h3 class="text-2xl font-serif text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Corporate Summit 2026</h3>
+                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By Sarah M. • Events</p>
+                            <button class="px-6 py-2 bg-white text-brand-900 font-medium rounded-md hover:bg-gray-100 transition-colors translate-y-4 group-hover:translate-y-0 duration-300 delay-150">View Details</button>
+                        </figcaption>
+                    </figure>
+                    <!-- Item 3 -->
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-stone-200 cursor-pointer" data-category="nature">
+                        <div class="absolute inset-0 flex items-center justify-center text-gray-500 font-medium">Image Placeholder</div>
+                        <img src="" alt="Rwenzori Peaks" class="relative z-10 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <figcaption class="absolute inset-0 z-20 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+                            <h3 class="text-2xl font-serif text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Rwenzori Peaks</h3>
+                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By David L. • Nature</p>
+                            <button class="px-6 py-2 bg-white text-brand-900 font-medium rounded-md hover:bg-gray-100 transition-colors translate-y-4 group-hover:translate-y-0 duration-300 delay-150">View Details</button>
+                        </figcaption>
+                    </figure>
+                    <!-- Item 4 -->
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-slate-200 cursor-pointer" data-category="fineart">
+                        <div class="absolute inset-0 flex items-center justify-center text-gray-500 font-medium">Image Placeholder</div>
+                        <img src="" alt="Monochrome Series" class="relative z-10 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <figcaption class="absolute inset-0 z-20 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+                            <h3 class="text-2xl font-serif text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Monochrome Series</h3>
+                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By Sarah M. • Fine Art</p>
+                            <button class="px-6 py-2 bg-white text-brand-900 font-medium rounded-md hover:bg-gray-100 transition-colors translate-y-4 group-hover:translate-y-0 duration-300 delay-150">View Details</button>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Item 6 -->
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-neutral-200 cursor-pointer" data-category="nature">
+                        <div class="absolute inset-0 flex items-center justify-center text-gray-500 font-medium">Image Placeholder</div>
+                        <img src="" alt="Murchison Falls Safari" class="relative z-10 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <figcaption class="absolute inset-0 z-20 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+                            <h3 class="text-2xl font-serif text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Murchison Falls Safari</h3>
+                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By David L. • Nature</p>
+                            <button class="px-6 py-2 bg-white text-brand-900 font-medium rounded-md hover:bg-gray-100 transition-colors translate-y-4 group-hover:translate-y-0 duration-300 delay-150">View Details</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-900 text-white py-12 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <a href="#" class="text-2xl font-serif font-bold tracking-tight mb-6 md:mb-0 flex items-center gap-2">
+                    <i class="fa-solid fa-camera-retro text-brand-accent"></i>
+                    <span>Lenz<span class="text-brand-accent">.</span></span>
+                </a>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#" class="text-gray-400 hover:text-brand-accent transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-brand-accent transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-brand-accent transition-colors"><i class="fa-brands fa-twitter text-xl"></i></a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>&copy; 2026 Lenz Photography. All rights reserved.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-[60] bg-brand-900/95 backdrop-blur-sm hidden flex items-center justify-center opacity-0 transition-opacity duration-300">
+        <button id="lightbox-close" class="absolute top-6 right-6 text-white hover:text-brand-accent transition-colors text-3xl" aria-label="Close lightbox">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="w-full max-w-5xl px-4 flex items-center justify-center relative">
+            <img id="lightbox-img" src="" alt="Full size" class="max-h-[85vh] object-contain rounded-lg shadow-2xl scale-95 transition-transform duration-300">
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+</body>
+</html>
