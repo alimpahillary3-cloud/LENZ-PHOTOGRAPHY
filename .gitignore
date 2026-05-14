@@ -1,0 +1,2 @@
+# Ignore component assets that cause Git indexing issues
+components/

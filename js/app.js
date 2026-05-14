@@ -81,7 +81,12 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
-
+// Add initial visible class to gallery items for entry animation
+  galleryItems.forEach(item => {
+    requestAnimationFrame(() => {
+      item.classList.add('visible');
+    });
+  });
     // Lightbox Logic
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');

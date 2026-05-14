@@ -98,73 +98,81 @@
                     <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-gray-600 hover:bg-brand-800 hover:text-white hover:border-brand-800 transition-colors" data-filter="portrait">Portraits</button>
                     <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-gray-600 hover:bg-brand-800 hover:text-white hover:border-brand-800 transition-colors" data-filter="event">Events & Weddings</button>
                     <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-gray-600 hover:bg-brand-800 hover:text-white hover:border-brand-800 transition-colors" data-filter="nature">Nature</button>
-                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-gray-600 hover:bg-brand-800 hover:text-white hover:border-brand-800 transition-colors" data-filter="commercial">Commercial</button>
+                    
                     <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-gray-600 hover:bg-brand-800 hover:text-white hover:border-brand-800 transition-colors" data-filter="fineart">Fine Art</button>
                 </div>
 
-                <!-- CSS Grid Gallery -->
+                <!                                <!-- CSS Grid Gallery -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery-grid">
-                    <!-- Item 1 -->
-                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait">
-                        <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-medium">Image Placeholder</div>
-                        <img src="" alt="Golden Hour Portrait" class="relative z-10 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <figcaption class="absolute inset-0 z-20 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
-                            <h3 class="text-2xl font-serif text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Golden Hour Portrait</h3>
-                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By Arthur K. • Portraits</p>
-                            <button class="px-6 py-2 bg-white text-brand-900 font-medium rounded-md hover:bg-gray-100 transition-colors translate-y-4 group-hover:translate-y-0 duration-300 delay-150">View Details</button>
-                        </figcaption>
-                    </figure>
-                    <!-- Item 2 -->
-                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-gray-200 cursor-pointer" data-category="event">
-                        <div class="absolute inset-0 flex items-center justify-center text-gray-500 font-medium">Image Placeholder</div>
-                        <img src="" alt="Corporate Summit" class="relative z-10 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <figcaption class="absolute inset-0 z-20 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
-                            <h3 class="text-2xl font-serif text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Corporate Summit 2026</h3>
-                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By Sarah M. • Events</p>
-                            <button class="px-6 py-2 bg-white text-brand-900 font-medium rounded-md hover:bg-gray-100 transition-colors translate-y-4 group-hover:translate-y-0 duration-300 delay-150">View Details</button>
-                        </figcaption>
-                    </figure>
-                    <!-- Item 3 -->
-                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-stone-200 cursor-pointer" data-category="nature">
-                        <div class="absolute inset-0 flex items-center justify-center text-gray-500 font-medium">Image Placeholder</div>
-                        <img src="" alt="Rwenzori Peaks" class="relative z-10 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <figcaption class="absolute inset-0 z-20 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
-                            <h3 class="text-2xl font-serif text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Rwenzori Peaks</h3>
-                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By David L. • Nature</p>
-                            <button class="px-6 py-2 bg-white text-brand-900 font-medium rounded-md hover:bg-gray-100 transition-colors translate-y-4 group-hover:translate-y-0 duration-300 delay-150">View Details</button>
-                        </figcaption>
-                    </figure>
-                    <!-- Item 4 -->
-                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-slate-200 cursor-pointer" data-category="fineart">
-                        <div class="absolute inset-0 flex items-center justify-center text-gray-500 font-medium">Image Placeholder</div>
-                        <img src="" alt="Monochrome Series" class="relative z-10 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <figcaption class="absolute inset-0 z-20 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
-                            <h3 class="text-2xl font-serif text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Monochrome Series</h3>
-                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By Sarah M. • Fine Art</p>
-                            <button class="px-6 py-2 bg-white text-brand-900 font-medium rounded-md hover:bg-gray-100 transition-colors translate-y-4 group-hover:translate-y-0 duration-300 delay-150">View Details</button>
-                        </figcaption>
-                    </figure>
-                    <!-- Item 5 -->
-                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-zinc-200 cursor-pointer" data-category="commercial">
-                        <div class="absolute inset-0 flex items-center justify-center text-gray-500 font-medium">Image Placeholder</div>
-                        <img src="" alt="Product Campaign" class="relative z-10 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <figcaption class="absolute inset-0 z-20 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
-                            <h3 class="text-2xl font-serif text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Product Campaign</h3>
-                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By Arthur K. • Commercial</p>
-                            <button class="px-6 py-2 bg-white text-brand-900 font-medium rounded-md hover:bg-gray-100 transition-colors translate-y-4 group-hover:translate-y-0 duration-300 delay-150">View Details</button>
-                        </figcaption>
-                    </figure>
-                    <!-- Item 6 -->
-                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-neutral-200 cursor-pointer" data-category="nature">
-                        <div class="absolute inset-0 flex items-center justify-center text-gray-500 font-medium">Image Placeholder</div>
-                        <img src="" alt="Murchison Falls Safari" class="relative z-10 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <figcaption class="absolute inset-0 z-20 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
-                            <h3 class="text-2xl font-serif text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Murchison Falls Safari</h3>
-                            <p class="text-brand-accent mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">By David L. • Nature</p>
-                            <button class="px-6 py-2 bg-white text-brand-900 font-medium rounded-md hover:bg-gray-100 transition-colors translate-y-4 group-hover:translate-y-0 duration-300 delay-150">View Details</button>
-                        </figcaption>
-                    </figure>
+                    <!-- PORTRAITS (23 Images) -->
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/Mwaah💋💋.jpg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/Striking pose, Timeless impression 📸🤎__📸_ @adekunlephotog @j12_picturess _✍🏾 _ @adekunlephotog __#portrait #portraitphotography #beauty #vogue #photography #photoshoot #editorial #reels #adekunlephotog.jpg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/WhatsApp Image 2026-05-11 at 5.51.58 PM.jpeg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/WhatsApp Image 2026-05-11 at 5.52.01 PM (1).jpeg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/WhatsApp Image 2026-05-11 at 5.52.01 PM (2).jpeg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/WhatsApp Image 2026-05-11 at 5.52.01 PM (3).jpeg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/WhatsApp Image 2026-05-11 at 5.52.01 PM (4).jpeg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/WhatsApp Image 2026-05-11 at 5.52.01 PM (5).jpeg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/WhatsApp Image 2026-05-11 at 5.52.01 PM (6).jpeg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/WhatsApp Image 2026-05-11 at 5.52.01 PM (7).jpeg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/WhatsApp Image 2026-05-11 at 5.52.01 PM.jpeg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/WhatsApp Image 2026-05-11 at 5.52.05 PM.jpeg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/WhatsApp Image 2026-05-11 at 5.53.31 PM (1).jpeg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/WhatsApp Image 2026-05-11 at 5.53.31 PM (2).jpeg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/WhatsApp Image 2026-05-11 at 5.53.31 PM.jpeg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/download (10).jpg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/download (11).jpg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/download (12).jpg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/download (6).jpg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/download (7).jpg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/download (8).jpg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/download (9).jpg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-brand-100 cursor-pointer" data-category="portrait"><img src="components/Portfolio/photo shoot to recreate.jpg" alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+
+                    <!-- EVENTS (12 Images) -->
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-gray-200 cursor-pointer" data-category="event"><img src="components/Events/Bridesmaids Dress.jpg" alt="Event" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-gray-200 cursor-pointer" data-category="event"><img src="components/Events/Gorgeous Wedding Party_.jpg" alt="Event" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-gray-200 cursor-pointer" data-category="event"><img src="components/Events/Turquoise Bridesmaid Dresses.jpg" alt="Event" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-gray-200 cursor-pointer" data-category="event"><img src="components/Events/Uganda elegant wedding sky-blue decoration.jpg" alt="Event" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-gray-200 cursor-pointer" data-category="event"><img src="components/Events/download (1).jpg" alt="Event" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-gray-200 cursor-pointer" data-category="event"><img src="components/Events/download (2).jpg" alt="Event" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-gray-200 cursor-pointer" data-category="event"><img src="components/Events/download (3).jpg" alt="Event" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-gray-200 cursor-pointer" data-category="event"><img src="components/Events/download (4).jpg" alt="Event" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-gray-200 cursor-pointer" data-category="event"><img src="components/Events/download (5).jpg" alt="Event" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-gray-200 cursor-pointer" data-category="event"><img src="components/Events/download (6).jpg" alt="Event" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-gray-200 cursor-pointer" data-category="event"><img src="components/Events/download (7).jpg" alt="Event" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-gray-200 cursor-pointer" data-category="event"><img src="components/Events/download.jpg" alt="Event" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+
+                    <!-- NATURE (17 Images) -->
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-stone-200 cursor-pointer" data-category="nature"><img src="components/Nature/22 Heartfelt Nature Photos That Remind Us Life Is Full of Cherished Moments.jpg" alt="Nature" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-stone-200 cursor-pointer" data-category="nature"><img src="components/Nature/23 Stunning 18th Birthday Party Ideas for Girls That She’ll Never Forget.jpg" alt="Nature" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-stone-200 cursor-pointer" data-category="nature"><img src="components/Nature/A Rooster 🐓.jpg" alt="Nature" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-stone-200 cursor-pointer" data-category="nature"><img src="components/Nature/Sweet real monkey🐒 with a banana🍌.jpg" alt="Nature" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-stone-200 cursor-pointer" data-category="nature"><img src="components/Nature/Tropical beach path at dusk Wallpaper.jpg" alt="Nature" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-stone-200 cursor-pointer" data-category="nature"><img src="components/Nature/Wildflower Wonders of the World.jpg" alt="Nature" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-stone-200 cursor-pointer" data-category="nature"><img src="components/Nature/download (1).jpg" alt="Nature" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-stone-200 cursor-pointer" data-category="nature"><img src="components/Nature/download (13).jpg" alt="Nature" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-stone-200 cursor-pointer" data-category="nature"><img src="components/Nature/download (14).jpg" alt="Nature" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-stone-200 cursor-pointer" data-category="nature"><img src="components/Nature/download (15).jpg" alt="Nature" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-stone-200 cursor-pointer" data-category="nature"><img src="components/Nature/download (16).jpg" alt="Nature" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-stone-200 cursor-pointer" data-category="nature"><img src="components/Nature/download (2).jpg" alt="Nature" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-stone-200 cursor-pointer" data-category="nature"><img src="components/Nature/download (3).jpg" alt="Nature" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-stone-200 cursor-pointer" data-category="nature"><img src="components/Nature/download (4).jpg" alt="Nature" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-stone-200 cursor-pointer" data-category="nature"><img src="components/Nature/download (5).jpg" alt="Nature" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-stone-200 cursor-pointer" data-category="nature"><img src="components/Nature/download.jpg" alt="Nature" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-stone-200 cursor-pointer" data-category="nature"><img src="components/Nature/mountain on tree.jpg" alt="Nature" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+
+                    <!-- FINE ART (7 Images) -->
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-slate-200 cursor-pointer" data-category="fineart"><img src="components/Fine Art/By Adiel Katz_.jpg" alt="Fine Art" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-slate-200 cursor-pointer" data-category="fineart"><img src="components/Fine Art/download (1).jpg" alt="Fine Art" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-slate-200 cursor-pointer" data-category="fineart"><img src="components/Fine Art/download (2).jpg" alt="Fine Art" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-slate-200 cursor-pointer" data-category="fineart"><img src="components/Fine Art/download (3).jpg" alt="Fine Art" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-slate-200 cursor-pointer" data-category="fineart"><img src="components/Fine Art/download (4).jpg" alt="Fine Art" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-slate-200 cursor-pointer" data-category="fineart"><img src="components/Fine Art/download (5).jpg" alt="Fine Art" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
+                    <figure class="gallery-item group relative overflow-hidden rounded-xl shadow-sm aspect-[4/5] bg-slate-200 cursor-pointer" data-category="fineart"><img src="components/Fine Art/download.jpg" alt="Fine Art" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></figure>
                 </div>
+
+          </div>
             </div>
         </section>
 
@@ -191,7 +199,7 @@
             
             <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
                 <p>&copy; 2026 Lenz Photography. All rights reserved.</p>
-                <p class="mt-2 md:mt-0">Designed for BIT122 - Cavendish University</p>
+
             </div>
         </div>
     </footer>
